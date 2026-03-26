@@ -56,7 +56,7 @@
 - Add in css ```position: relative; top: 20px; left: 20px;``` to .sidebar.
 
 - Guided Question: What changed compared to the default static positioning? Try to give different values to top and left or you can change it to bottom, right.
-    Answer: 
+    Answer: The box's position moved a bit to the right and down.
 
 
 ### Step 2 (Fixed):
@@ -64,12 +64,14 @@
 - Add in css ```position: fixed; bottom: 0; width: 100%;``` to .footer.
 
 - Guided Question: What happens when you scroll the page? Why does the footer behave differently from position relative?
+    Answer: The footer stays fixed in the viewport instead of scrolling with the page. It behaves differently from position relative because it is positioned relative to the viewport unlike position relative that is based on its normal or static position.
 
 ### Step 3 (Absolute):
 
 - Add in css ```position: absolute; top: 66px; left: 200px;``` to .content.
 
 - Guided Question: What is the effect of position: absolute on an element? How is it different from fixed?
+    Answer: Position absolute positions an element to its closest ancestor, unlike position fixed that positions an element relative to the viewport.
 
 ### Step 4 : (Absolute)
 
@@ -89,18 +91,26 @@
 - Give .content a z-index: 1.
 
 - Guided Question: Why does the notice appear on top of the content? What happens if you swap the z‑index values?
+    Answer: The notice appears on top of the content because its z-index is larger than the z=index of .content. If their z-index values get swapped, then content would be under notice.
 
 - Challenge: 
     * What changes that you have to do on the code that will position .notice box on the top right corner of the .content box? Please write the code on paper as well (both html and css on the part of .notice and .content).
+        Answer: Changing the value for "left" to a slightly bigger one to make it move more to the top right of the content bx.
     * Try to change the position of .content to relative then to fixed. What do you observed each time?
+        Answer: When changed to relative, it moved its position relative to its original position, then went back to that old position when changed to fixed.
     * What do you observe on about the effect of z-index on .notice and .content boxes?
+        Answer: The values of the z=index for the .notice and .content boxes change their position either being below or on top of oen another. Since the z-index value for .notice is larger, it is on top of the .content box.
 
 3. Please answer the following reflection questions (15 minutes)
 
     a. Could you summarize the differences between the CSS position values (static, relative, absolute, fixed)? 
+        Answer: static is the element's original position, relative is positioning it relative to its og position, fixed is positioning it relative to the viewpoint, and absolute positions it relative to its nearest ancestor.
 
     b. How does absolute positioning depend on its parent element?
+        Answer: Absolute positioning an element will depend on the parent's element because it will be positioned next to that said parent element.
 
     c. How do you differentiate sticky from fixed (you can research on sticky)?
+        Answer: Both get positioned to its nearest ancestor, but fixed will stay fixed and sticky will scroll along with the screen.
 
     d. If you were designing a webpage for a school event, how might you use positioning to highlight important information? Please give concrete examples.
+        Answer: 
